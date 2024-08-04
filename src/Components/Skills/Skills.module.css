@@ -1,0 +1,77 @@
+
+.main {
+    background-color: white;
+    display: flex;
+    gap: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.skills {
+    position: absolute;
+    font-size: 30px;
+    top: 100px;
+    left: 130px;
+    width: 500px;
+}
+
+.photo2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 800px;
+}
+
+.all {
+    position: relative;
+    align-self: center;
+    z-index: 1;
+}
+
+.invisible {
+    position: absolute;
+    visibility: hidden;
+    top: 50%;
+}
+
+.skillsPhoto {
+ display: none;       
+}
+
+.skillHeadline {
+    display: none;
+}
+
+@media screen and (max-width:1300px) {
+    .photo2{
+        display: none;
+    }
+
+    .photo1 {
+        display: none;
+    }
+
+    .skills{
+        display: none;
+    }
+
+
+    .skillsPhoto {
+        display: block;
+        width: 100%;
+    }
+
+    .main {
+        gap: 0;
+    }
+    
+}
+
+
+@media screen and (max-width: 900px) {
+    .skillHeadline {
+        display: block;
+        padding-left: 20px;
+        font-size: 25px;
+    }
+}

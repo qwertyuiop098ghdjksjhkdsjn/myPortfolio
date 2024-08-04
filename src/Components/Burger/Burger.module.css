@@ -1,0 +1,49 @@
+
+.burger {
+    display: none;
+}
+
+.burgerButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30px;
+    background: none;
+    border: none;
+}
+
+.burgerButton span {
+    display: block;
+    height: 2px;
+    width: 30px;
+    background-color: black;
+}
+
+.burgerWrapper {
+    position: fixed;
+    top: 74px;
+    left: 0;
+    background: rgb(64, 64, 64);
+    width: 60%;
+    height: 100vh;
+    
+}
+
+.burgerWrapper a {
+    color: rgb(207, 207, 207);
+    margin-bottom: 25px;
+    padding: 10px 0 0 15px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .burger {
+        display: block;
+    }
+}

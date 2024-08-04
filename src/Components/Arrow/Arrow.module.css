@@ -1,0 +1,15 @@
+
+.arrow {
+    height: 40px;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 2;
+    right: 10px;
+    bottom: 10px;
+    background-color: rgb(207, 207, 207);
+    cursor: pointer;
+}
+
+.arrow img {
+    height: 40px;
+}

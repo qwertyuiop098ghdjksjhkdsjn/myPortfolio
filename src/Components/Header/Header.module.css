@@ -1,0 +1,42 @@
+
+.header {
+    padding: 20px;
+    border-bottom: 4px solid black;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    position: fixed;
+    right: 0;
+    width: calc(100% - 90px);
+    z-index: 2;
+    background-color: rgba(207, 207, 207, 0.889);
+}
+
+.header a {
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+}
+
+.list {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.list a:first-child {
+    font-size: 22px;
+    font-weight: bold; 
+    flex-basis: 100%;
+    display: block;
+}
+
+@media screen and (max-width: 900px) {
+    .header{
+        width: 100%;
+    }
+
+    .list{
+        display: none;
+    }
+}

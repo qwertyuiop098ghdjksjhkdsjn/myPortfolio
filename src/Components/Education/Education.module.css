@@ -1,0 +1,50 @@
+
+.invisible {
+    position: absolute;
+    visibility: hidden;
+    top: 50%;
+}
+
+
+.photo {
+    height: calc(100vh - 100px);
+}
+
+.block {
+    display: flex;
+    position: relative;
+}
+
+.block2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.education {
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+   
+
+   .block {
+    flex-direction: column;
+    align-items: flex-start;
+   }
+
+   .education {
+    display: block;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    font-size: 25px;
+   }
+}
+
+@media screen and (max-width: 1500px) {
+    .photo {
+    max-width: 100%;
+    height: auto;
+    max-height: calc(100vh - 100px);
+   } 
+}
